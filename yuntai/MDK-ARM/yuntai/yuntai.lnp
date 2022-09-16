@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"yuntai\startup_stm32f103xb.o"
+"yuntai\main.o"
+"yuntai\gpio.o"
+"yuntai\tim.o"
+"yuntai\usart.o"
+"yuntai\stm32f1xx_it.o"
+"yuntai\stm32f1xx_hal_msp.o"
+"yuntai\stm32f1xx_hal_gpio_ex.o"
+"yuntai\stm32f1xx_hal_tim.o"
+"yuntai\stm32f1xx_hal_tim_ex.o"
+"yuntai\stm32f1xx_hal.o"
+"yuntai\stm32f1xx_hal_rcc.o"
+"yuntai\stm32f1xx_hal_rcc_ex.o"
+"yuntai\stm32f1xx_hal_gpio.o"
+"yuntai\stm32f1xx_hal_dma.o"
+"yuntai\stm32f1xx_hal_cortex.o"
+"yuntai\stm32f1xx_hal_pwr.o"
+"yuntai\stm32f1xx_hal_flash.o"
+"yuntai\stm32f1xx_hal_flash_ex.o"
+"yuntai\stm32f1xx_hal_exti.o"
+"yuntai\stm32f1xx_hal_uart.o"
+"yuntai\system_stm32f1xx.o"
+--strict --scatter "yuntai\yuntai.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "yuntai.map" -o yuntai\yuntai.axf
